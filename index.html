@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chic. شياكة</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="cart-bar">
+    <button onclick="openCart()">
+        🛒 السلة
+        <span id="cartCount" class="cart-count">0</span>
+    </button>
+</div>
+<nav class="navbar">
+
+    <a href="#home">الرئيسية</a>
+
+    <a href="#products">الملابس</a>
+
+    <a href="#shoes">الأحذية</a>
+
+    <a href="#contact">تواصل معنا</a>
+
+</nav>
+    <header id="home">
+
+    <div class="logo">
+        Chic. شياكة
+    </div>
+
+    <h1>أناقتك تبدأ من هنا ✨</h1>
+
+    <p>
+        ملابس وأحذية رجالية تجمع بين الأناقة والجودة
+    </p>
+
+    <a href="#products" class="shop-btn">
+        تسوق الآن 🛍️
+    </a>
+
+    </header>
+  <div class="welcome-bar">
+    ✨ أهلاً بك في Chic. شياكة — اكتشف أحدث الملابس والأحذية
+  </div>
+    </>
+
+<div class="search-box">
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="ابحث عن منتج..."
+    oninput="searchProducts()"
+>
+
+    <button onclick="searchProducts()">🔍</button>
+
+</div>
+    <section id="products" class="products">
+      <h2 class="section-title">الملابس الرجالية 👕</h2>
+<section id="shoes" class="shoes">
+  <h2 class="section-title">الأحذية الرجالية 👟</h2>
+
+    <h2>الأحذية 👟</h2>
+
+    <div class="shoes-grid">
+
+        <div class="product-card">
+            <img src="images/1790033542918.jpg" alt="حذاء رجالي">
+            <h2>حذاء رجالي</h2>
+            <p>حذاء أنيق وعصري</p>
+            <strong>35,000 جنيه</strong>
+            <button onclick="orderProduct('حذاء رجالي', '35,000')">
+                اطلب الآن
+            </button>
+          <button onclick="addToCart('حذاء رجالي', '35,000', 'images/1790033498609.jpg')">
+    أضف للسلة 🛒
+          </button>
+        </div>
+
+
+        <div class="product-card">
+          <img src="images/1790033498609.jpg" alt="حذاء رجالي">
+            <h2>حذاء رجالي</h2>
+            <p>تصميم أنيق ومميز</p>
+            <strong>40,000 جنيه</strong>
+        <button onclick="orderProduct('حذاء رجالي', '40,000')">
+    اطلب الآن
+        </button>
+      
+          <button onclick="addToCart('حذاء رجالي', '40,000', 'images/1790033542918.jpg')">
+    أضف للسلة 🛒
+          </button>
+            <a
+    <butto onclick="addToCart('طقم رجالي', '40,000', 'images/1789287093870.jpg')">
+    أضف للسلة 🛒
+    </butto
+            </a>
+        </div>
+
+
+        <div class="product-card">
+            <img src="images/1790033418082.jpg" alt="حذاء رجالي">
+            <h2>حذاء رجالي</h2>
+            <p>راحة وأناقة في نفس الوقت</p>
+            <strong>45,000 جنيه</strong>
+            <button onclick="orderProduct('حذاء رجالي', '45,000')">
+                اطلب الآن
+            </button>
+          <button onclick="addToCart('حذاء رجالي', '45,000', 'images/1790033418082.jpg')">
+    أضف للسلة 🛒
+          </button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="images/1790033454445.jpg" alt="حذاء رجالي">
+            <h2>حذاء رجالي</h2>
+            <p>اختيار مميز لإطلالتك</p>
+            <strong>50,000 جنيه</strong>
+            <button onclick="orderProduct('حذاء رجالي', '50,000')">
+                اطلب الآن
+            </button>
+          <button onclick="addToCart('حذاء رجالي', '50,000', 'images/1790033454445.jpg')">
+    أضف للسلة 🛒
+          </button>
+        </div>
+
+    </div>
+
+</section>
+      <section id="contact" class="contact">
+
+    <h2>تواصل معنا 📞</h2>
+
+    <p>للطلب والاستفسار تواصل معنا عبر واتساب</p>
+
+    <a href="https://wa.me/249907051115" class="whatsapp-btn">
+        تواصل معنا عبر واتساب 💬
+    </a>
+
+      </section>
+        <!-- المنتج 1 -->
+      
+        <div class="product-card">
+
+            <img src="images/1789287093870.jpg"
+                 alt="طقم رجالي">
+
+            <h2>طقم رجالي</h2>
+
+            <p>طقم أنيق ومميز</p>
+
+            <strong>40,000 جنيه</strong>
+
+            <button onclick="orderProduct('طقم رجالي', '40,000')">
+    اطلب الآن
+            </button>
+<button onclick="addToCart('طقم رجالي', '40,000', 'images/1789287093870.jpg')">
+    أضف للسلة 🛒
+</button>
+        </div>
+
+
+        <!-- المنتج 2 -->
+        <div class="product-card">
+
+            <img src="images/1789287116112.jpg"
+                 alt="بنطلون رجالي">
+
+            <h2>بنطلون رجالي</h2>
+
+            <p>تصميم عصري ومميز</p>
+
+            <strong>30,000 جنيه</strong>
+
+            <button onclick="orderProduct('طقم رجالي', '40,000')">
+    اطلب الآن
+            </button>
+<button onclick="addToCart('بنطلون رجالي', '30,000', 'images/1789287116112.jpg')">
+    أضف للسلة 🛒
+</button>
+          <button onclick="addToCart('بنطلون رجالي', '30,000')">
+          </button>
+        </div>
+
+
+        <!-- المنتج 3 -->
+        <div class="product-card">
+
+            <img src="images/1789287196528.jpg"
+                 alt="قميص رجالي">
+
+            <h2>قميص رجالي</h2>
+
+            <p>قميص أنيق وعصري</p>
+
+            <strong>35,000 جنيه</strong>
+
+        <button onclick="orderProduct('بنطلون رجالي', '30,000')">
+    اطلب الآن
+        </button>
+          <button onclick="addToCart('قميص رجالي', '35,000', 'images/1789287196528.jpg')">
+    أضف للسلة 🛒
+          </button>
+        </div>
+
+
+        <!-- المنتج 4 -->
+        <div class="product-card">
+
+            <img src="images/1789287227114.jpg"
+                 alt="ملابس رجالية">
+
+            <h2>ملابس رجالية</h2>
+
+            <p>أناقة تناسب ذوقك</p>
+
+            <strong>45,000 جنيه</strong>
+
+            <button onclick="orderProduct('قميص رجالي', '35,000')">
+    اطلب الآن
+            </button>
+<button onclick="addToCart('ملابس رجالية', '45,000', 'images/1789287227114.jpg')">
+    أضف للسلة 🛒
+</button>
+        </div>
+
+
+        <!-- المنتج 5 -->
+        <div class="product-card">
+
+            <img src="images/1789287382068.jpg"
+                 alt="طقم رجالي فاخر">
+
+            <h2>طقم رجالي فاخر</h2>
+
+            <p>تصميم أنيق وعصري</p>
+
+            <strong>50,000 جنيه</strong>
+
+            <button onclick="orderProduct('ملابس رجالية', '45,000')">
+    اطلب الآن
+            </button>
+<button onclick="addToCart('طقم رجالي فاخر', '50,000', 'images/1789287382068.jpg')">
+    أضف للسلة 🛒
+</button>
+        </div>
+
+    </secti>
+
+
+    <footer>
+
+        <p>© 2026 Chic. شياكة</p>
+
+        <p>ملابس وأحذية رجالية 👔👟</p>
+
+    </footer>
+      
+    
+          <script>
+function orderProduct(name, price) {
+
+    const phone = "249907051115";
+
+    const message =
+        "السلام عليكم، أريد طلب:\n\n" +
+        "المنتج: " + name + "\n" +
+        "السعر: " + price + " جنيه\n\n" +
+        "من متجر Chic. شياكة";
+
+    const whatsapp =
+        "https://wa.me/" + phone +
+        "?text=" + encodeURIComponent(message);
+
+    window.location.href = whatsapp;
+}
+</script>          
+</script>          
+
+      background:#f5f5f5;
+                    padding:15px;
+                    margin:10px 0;
+                    border-radius:12px;
+                    display:flex;
+                    justify-content:space-between;
+
+                  <div style="
+    display:flex;
+    align-items:center;
+    gap:12px;
+">
+
+    <img src="${item.image}"
+    style="
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+    ">
+
+    <div>
+        <strong>${item.name}</strong>
+        <br>
+        <span>${item.price} جنيه</span>
+    </div>
+
+</div>
+
+                    <button onclick="removeFromCart(${index})"
+                        style="
+                            background:#111;
+                            color:white;
+                            border:none;
+                            border-radius:8px;
+                            padding:8px 12px;
+                            cursor:pointer;
+                        ">
+                        🗑️
+                    </button>
+
+                </div>
+            `;
+        });
+    }
+
+    let cartWindow = document.createElement("div");
+
+    cartWindow.id = "myCartWindow";
+
+    cartWindow.style.cssText = `
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.7);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        z-index:99999;
+        padding:20px;
+    `;
+
+    cartWindow.innerHTML = `
+
+        <div style="
+            background:white;
+            width:100%;
+            max-width:430px;
+            max-height:80vh;
+            overflow-y:auto;
+            border-radius:20px;
+            padding:25px;
+            box-shadow:0 20px 50px rgba(0,0,0,0.4);
+            direction:rtl;
+        ">
+
+            <button onclick="closeMyCart()"
+                style="
+                    float:left;
+                    width:38px;
+                    height:38px;
+                    border:none;
+                    border-radius:50%;
+                    background:#111;
+                    color:white;
+                    font-size:18px;
+                    cursor:pointer;
+                ">
+                ✕
+            </button>
+
+            <h2 style="
+                text-align:center;
+                margin-bottom:20px;
+            ">
+                🛒 سلة المشتريات
+            </h2>
+
+            ${productsHTML}
+
+            <hr>
+          function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+<script>
+
+let cart = JSON.parse(localStorage.getItem("chicCart")) || [];
+
+/* زر اطلب الآن */
+function orderProduct(name, price) {
+
+    const phone = "249907051115";
+
+    const message =
+        "السلام عليكم، أريد طلب:\n\n" +
+        "المنتج: " + name + "\n" +
+        "السعر: " + price + " جنيه\n\n" +
+        "من متجر Chic. شياكة";
+
+    const whatsapp =
+        "https://wa.me/" + phone +
+        "?text=" + encodeURIComponent(message);
+
+    window.location.href = whatsapp;
+}
+
+
+/* إضافة منتج للسلة */
+function addToCart(name, price, image) {
+
+    cart.push({
+        name: name,
+        price: price,
+        image: image,
+        quantity: 1
+    });
+
+    document.getElementById("cartCount").textContent =
+        cart.length;
+
+    alert("تمت إضافة " + name + " إلى السلة 🛒");
+  localStorage.setItem("chicCart", JSON.stringify(cart));
+  }
+/* فتح السلة */
+function openCart() {
+
+    let oldCart =
+        document.getElementById("myCartWindow");
+
+    if (oldCart) {
+        oldCart.remove();
+    }
+
+    let total = 0;
+    let productsHTML = "";
+
+    if (cart.length === 0) {
+
+        productsHTML = `
+            <div style="
+                text-align:center;
+                padding:30px;
+                font-size:18px;
+            ">
+                🛒<br><br>
+                السلة فارغة
+            </div>
+        `;
+
+    } else {
+
+        cart.forEach(function(item, index) {
+
+            total += parseInt(
+    item.price.replace(/,/g, "")
+) * item.quantity;
+            
+
+            productsHTML += `
+                <div style="
+                    background:#f5f5f5;
+                    padding:12px;
+                    margin:10px 0;
+                    border-radius:12px;
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    gap:10px;
+                ">
+
+                    <div style="
+                        display:flex;
+                        align-items:center;
+                        gap:12px;
+                    ">
+
+                        <img src="${item.image}"
+                            style="
+                                width:70px;
+                                height:70px;
+                                object-fit:cover;
+                                border-radius:10px;
+                            ">
+
+                      <div>
+    <strong>${item.name}</strong>
+    <br>
+    <span>${item.price} جنيه</span>
+
+    <div style="
+        display:flex;
+        align-items:center;
+        gap:8px;
+        margin-top:8px;
+    ">
+
+        <button
+            onclick="changeQuantity(${index}, -1)"
+            style="
+                width:30px;
+                height:30px;
+                border:none;
+                border-radius:6px;
+                background:#111;
+                color:white;
+                font-size:18px;
+            ">
+            −
+        </button>
+
+        <span style="
+            font-weight:bold;
+            min-width:25px;
+            text-align:center;
+        ">
+            ${item.quantity}
+        </span>
+
+        <button
+            onclick="changeQuantity(${index}, 1)"
+            style="
+                width:30px;
+                height:30px;
+                border:none;
+                border-radius:6px;
+                background:#111;
+                color:white;
+                font-size:18px;
+            ">
+            +
+        </button>
+
+    </div>
+</div>
+
+                    </div>
+
+                    <button
+                        onclick="removeFromCart(${index})"
+                        style="
+                            background:#111;
+                            color:white;
+                            border:none;
+                            border-radius:8px;
+                            padding:8px 12px;
+                            cursor:pointer;
+                        ">
+                        🗑️
+                    </button>
+
+                </div>
+            `;
+        });
+    }
+
+
+    let cartWindow =
+        document.createElement("div");
+
+    cartWindow.id = "myCartWindow";
+
+    cartWindow.style.cssText = `
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.7);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        z-index:99999;
+        padding:20px;
+    `;
+
+
+    cartWindow.innerHTML = `
+
+        <div style="
+            background:white;
+            width:100%;
+            max-width:430px;
+            max-height:80vh;
+            overflow-y:auto;
+            border-radius:20px;
+            padding:25px;
+            box-shadow:0 20px 50px rgba(0,0,0,0.4);
+            direction:rtl;
+        ">
+
+            <button
+                onclick="closeMyCart()"
+                style="
+                    float:left;
+                    width:38px;
+                    height:38px;
+                    border:none;
+                    border-radius:50%;
+                    background:#111;
+                    color:white;
+                    font-size:18px;
+                ">
+                ✕
+            </button>
+
+            <h2 style="
+                text-align:center;
+                margin-bottom:20px;
+            ">
+                🛒 سلة المشتريات
+            </h2>
+
+            ${productsHTML}
+
+            <hr>
+
+            <h3 style="
+                text-align:center;
+                margin:20px 0;
+            ">
+                💰 الإجمالي:
+                ${total.toLocaleString()} جنيه
+            </h3>
+
+            <button
+                onclick="orderCart()"
+                style="
+                    width:100%;
+                    padding:14px;
+                    border:none;
+                    border-radius:12px;
+                    background:#111;
+                    color:white;
+                    font-size:17px;
+                    font-weight:bold;
+                ">
+                📱 إتمام الطلب عبر واتساب
+            </button>
+
+        </div>
+    `;
+
+    document.body.appendChild(cartWindow);
+}
+
+
+/* إغلاق السلة */
+function closeMyCart() {
+
+    let cartWindow =
+        document.getElementById("myCartWindow");
+
+    if (cartWindow) {
+        cartWindow.remove();
+    }
+}
+
+
+/* حذف منتج */
+function removeFromCart(index) {
+
+    cart.splice(index, 1);
+  localStorage.setItem("chicCart", JSON.stringify(cart));
+
+    document.getElementById("cartCount").textContent =
+        cart.length;
+
+    openCart();
+}
+  function changeQuantity(index, change) {
+
+    cart[index].quantity += change;
+
+    if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      localStorage.setItem("chicCart", JSON.stringify(cart));
+    }
+
+    document.getElementById("cartCount").textContent =
+        cart.length;
+
+    openCart();
+  }
+
+
+/* إرسال السلة إلى واتساب */
+function orderCart() {
+
+    if (cart.length === 0) {
+        alert("السلة فارغة 🛒");
+        return;
+    }
+
+    let message =
+        "السلام عليكم، أريد طلب المنتجات التالية:\n\n";
+
+    let total = 0;
+
+    cart.forEach(function(item, index) {
+
+        let price =
+            parseInt(item.price.replace(/,/g, ""));
+
+        let itemTotal =
+            price * item.quantity;
+
+        message +=
+            (index + 1) + ". " +
+            item.name +
+            " — " +
+            item.price +
+            " × " +
+            item.quantity +
+            " = " +
+            itemTotal.toLocaleString() +
+            " جنيه\n";
+
+        total += itemTotal;
+    });
+
+    message +=
+        "\n💰 الإجمالي: " +
+        total.toLocaleString() +
+        " جنيه\n\n" +
+        "من متجر Chic. شياكة";
+
+    const phone = "249907051115";
+
+    const whatsapp =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.location.href = whatsapp;
+  }
+  document.getElementById("cartCount").textContent =
+    cart.length;
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+  }
+  function searchProducts() {
+    let searchText = document.getElementById("searchInput").value
+        .trim()
+        .toLowerCase();
+
+    let products = document.querySelectorAll(".product-card");
+
+    products.forEach(function(product) {
+        let productText = product.textContent.toLowerCase();
+
+        if (searchText === "" || productText.includes(searchText)) {
+            product.style.display = "";
+        } else {
+            product.style.display = "none";
+        }
+    });
+  }
+  function openImageViewer(imageSrc) {
+    document.getElementById("viewerImage").src = imageSrc;
+    document.getElementById("imageViewer").style.display = "flex";
+}
+
+function closeImageViewer() {
+    document.getElementById("imageViewer").style.display = "none";
+  }
+  document.querySelectorAll(".product-card img").forEach(function(img) {
+    img.style.cursor = "zoom-in";
+
+    img.onclick = function() {
+        openImageViewer(this.src);
+    };
+});
+</script>
+          <footer class="footer">
+    <div class="footer-logo">
+        Chic. شياكة
+    </div>
+
+    <p>
+        أناقتك تبدأ من هنا ✨
+    </p>
+
+    <p class="copyright">
+        © 2026 Chic. شياكة — جميع الحقوق محفوظة
+    </p>
+          </footer>
+          <button id="topBtn" onclick="scrollToTop()">
+    ↑
+          </button>
+          <div id="imageViewer" class="image-viewer" onclick="closeImageViewer()">
+    <span>✕</span>
+    <img id="viewerImage" src="" alt="صورة المنتج">
+          </div>
+</body>
+  <div class="cart-bar">
+    <button onclick="openCart()">
+        🛒 السلة: <span id="cartCount">0</span>
+    </button>
+  </div>
+</html>
